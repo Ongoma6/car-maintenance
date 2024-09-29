@@ -1,0 +1,164 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styling */
+#contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="submit"] {
+    background: #294164;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-media a {
+    color: #0077cc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Parts List Styling */
+.parts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.parts-list li {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.parts-list li h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.parts-list li p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.parts-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: lower;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .parts-list li {
+        margin-bottom: 15px;
+    }
+}
+
