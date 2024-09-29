@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Services</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Our Car Repair Services</h1>
+                    <img src="images/DALL·E 2024-09-11 22.02.00 - A sleek modern logo for a car repair and maintenance service, featuring a stylized wrench and a car symbol integrated with a circular design. The colo.webp"
+                     alt="Car Repair Logo" class="logo">
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="parts.html">Autospares</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services"></section>
+            
+            <h2>Available Services</h2>
+            <ul class="service-list">
+                <li>
+                    <h3>Oil Change</h3>
+                    <p>Ensure your car's engine runs smoothly with a regular oil change.</p>
+                    <p>Price: Ksh. 500</p>
+                    <button onclick="bookService('Oil Change')">Book Now</button>
+                </li>
+                <li>
+                    <h3>Tyre Repair</h3>
+                    <p>Get your tires repaired or replaced for a safer drive.</p>
+                    <p>Price: Ksh. 250 per Tyre</p>
+                    <button onclick="bookService('Tyre Repair')">Book Now</button>
+                </li>
+                <li>
+                    <h3>Engine Check</h3>
+                    <p>Full diagnostic check to ensure your engine is in top condition.</p>
+                    <p>Price: Ksh. 1200</p>
+                    <button onclick="bookService('Engine Check')">Book Now</button>
+                </li>
+                <li>
+                    <h3>Car Diagnostic</h3>
+                    <p>Full diagnostic to ensure your is top notch condition for many milages</p>
+                    <p>Price: Ksh 3500</p>
+                    <button onclick="bookService('Car Diagnostic')">Book Now</button>
+                </li>
+                <li>
+                    <h3>
+                        Car washing and Cleaning
+                    </h3>
+                    <p>Full car washing in and out for good looking car body</p>
+                    <p>Price: Ksh. 200</p>
+                    <button onclick="bookservice('Car washing and cleaning')">Book Now</button>
+                </li>
+                <li>
+                    <h3>
+                        Auto spare parts
+                    </h3>
+                    <p>Providing quality spare parts for your car,come and get your types</p>
+                    <p>Price: Follow for more info  <a href="parts.html">Autospare</a></p>
+                    <button onclick="bookService('Autospare parts')">Book Now</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <div class="container">
+            <h2>Book Your Service</h2>
+            <form id="booking-form">
+                <label for="car-model">Car Model:</label>
+                <input type="text" id="car-model" name="car-model" placeholder="e.g. Toyota Corolla" required>
+
+                <label for="service-type">Service Type:</label>
+                <select id="service-type" name="service-type">
+                    <option value="oil-change">Oil Change</option>
+                    <option value="tire-repair">Tire Repair</option>
+                    <option value="engine-check">Engine Check</option>
+                    <option value="Car Diagnostic">Car Diagnostic</option>
+                    <option value="Car washing and cleaning">Car washing and cleaning</option>
+                    <option value="Auto spare parts">Auto spare parts</option>
+                </select>
+
+                <label for="appointment-date">Appointment Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+
+                <input type="submit" value="Book Appointment">
+            </form>
+            <div id="form-response"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Repair Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for form handling -->
+    <script src="main.js"></script>
+</body>
+</html>
